@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 236, 225, 0.5);
+}
+p{
+    font-family: Glacial indeference;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(253, 236, 225); /* No background */
+    border-bottom: 0.5px solid #e0e0e0; /* Optional border */
+}
+
+.navbar-left .logo img {
+    height: 60px; /* Adjust according to your logo size */
+    margin-bottom: none;
+
+}
+#home{
+    font-size: smaller;
+    margin-top: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-right :hover{
+    color: rgb(2, 61, 54);
+    font-size:20px ;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    
+}
+
+
+
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+
+.phonde-icon {
+    margin-right: 5px; /* Space between icon and number */
+    
+}
+
+#categories {
+    margin-left: 50px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+#categories h2{
+    margin-left: 200px;
+}
+
+
+
+.nav-container {
+    position: relative;
+    margin-left: 250px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    margin: 20px;
+    font-family: monteserrat;
+}
+
+.nav-list-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    transition: transform 1.9s ease; /* Reduced speed */
+}
+
+.nav-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    background-color: #ccc; /* Grey background */
+    color: #000; /* Black text */
+    border-right: 1px solid #ddd;
+    border-radius: 3px;
+    transition: background-color 0.6s ease, transform 0.7s ease;
+}
+
+.nav-item:hover {
+    background-color: #bbb; /* Slightly darker grey on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.nav-item:active, .nav-item.active {
+    background-color: rgb(2, 61, 54); /* Dark teal color when active */
+    color: #fff; /* White text when active */
+}
+.nav-item:not(:first-child):active, 
+.nav-item:not(:first-child).active {
+    background-color: rgb(2, 61, 54); /* Dark teal color when active */
+    color: #fff; /* White text when active */
+}
+
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    width: 30px; /* Small initial width */
+    background: url('search-icon.png') no-repeat center center;
+    background-size: 16px 16px;
+    transition: width 0.3s ease;
+    text-indent: -9999px; /* Hide placeholder initially */
+}
+
+.search-bar input:focus {
+    width: 200px; /* Expanded width on focus */
+    outline: none;
+    text-indent: 0; /* Show placeholder text */
+    background: none; /* Remove the search icon */
+    background-color: #fff; /* White background for better visibility */
+    color: #000; /* Black text for contrast */
+    cursor: text;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('https://your-hosting-service.com/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+         url('https://your-hosting-service.com/fonts/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* logo introduction*/
+.log-intro h2{
+    text-align: center;
+    font-family: Monteserrat;
+    text-shadow: 2px solid #45a049;
+}
+.log-intro h4{
+    font-family: Monteserrat;
+    margin-left: 50px;
+}
+
+.log-intro p{
+    text-align: center;
+    text-decoration:none ;
+}
+.with-emoji {
+    display: inline-flex;
+    align-items: center;
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    margin-left: 20px;
+    margin-bottom: 10px;  
+    margin-top: 100px;   
+}
+
+.with-emoji::after {
+    content: '';
+    background-image: url('https://e7.pngegg.com/pngimages/498/114/png-clipart-emoji-domain-emoticon-ios-whatsapp-emoji-face-smiley.png'); /* Replace with your image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    margin-left: 10px; /* Adjust spacing as needed */
+    display: inline-block;
+}
+
+
+
+/*carousel for logos* indicators*/
+
+
+.logo-packages {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.package {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.carousel-image {
+    display: none;
+    width: 350px;
+    height:auto;
+    border-radius: 5px;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background-color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+ul li {
+    padding-left: 20px;
+    text-indent: -20px;
+    margin: 5px 0;
+}
+
+ul li::before {
+    color: green;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

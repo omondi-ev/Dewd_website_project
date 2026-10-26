@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design Questionnaire</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00457c;
+        }
+
+        form fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #00457c;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #00457c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Design Questionnaire</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label for="company-name">Company/Organization Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+                
+                <label for="contact-person">Contact Person:</label>
+                <input type="text" id="contact-person" name="contact-person" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Business Address:</label>
+                <input type="text" id="address" name="address">
+                
+                <label for="website">Existing Website (if any):</label>
+                <input type="url" id="website" name="website">
+            </fieldset>
+
+            <fieldset>
+                <legend>Project Overview</legend>
+                <label for="purpose">Primary Purpose of the Website:</label>
+                <input type="text" id="purpose" name="purpose" required>
+                
+                <label for="launch-date">Desired Launch Date:</label>
+                <input type="date" id="launch-date" name="launch-date">
+            </fieldset>
+
+            <fieldset>
+                <legend>Target Audience</legend>
+                <label for="target-audience">Describe Your Target Audience:</label>
+                <textarea id="target-audience" name="target-audience" rows="4" required></textarea>
+                
+                <label for="user-action">Desired User Action:</label>
+                <textarea id="user-action" name="user-action" rows="2" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Design Preferences</legend>
+                <label for="design-style">Design Style Preferences:</label>
+                <textarea id="design-style" name="design-style" rows="3"></textarea>
+                
+                <label for="liked-websites">Websites You Like:</label>
+                <textarea id="liked-websites" name="liked-websites" rows="3"></textarea>
+                
+                <label for="color-scheme">Color Scheme/Branding Guidelines:</label>
+                <textarea id="color-scheme" name="color-scheme" rows="2"></textarea>
+                
+                <label for="logo">Need a Logo or Branding Materials?</label>
+                <select id="logo" name="logo">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hosting and Web Management</legend>
+                <label for="hosting">Do you need hosting services?</label>
+                <select id="hosting" name="hosting">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <label for="maintenance">Do you require ongoing website maintenance?</label>
+                <select id="maintenance" name="maintenance">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="additional-features">Additional Features/Considerations:</label>
+                <textarea id="additional-features" name="additional-features" rows="4"></textarea>
+                
+                <label for="questions">Questions or Concerns:</label>
+                <textarea id="questions" name="questions" rows="3"></textarea>
+            </fieldset>
+
+            <button type="submit">Submit Questionnaire</button>
+        </form>
+    </div>
+</body>
+</html>

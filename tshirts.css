@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 236, 225);
+    margin-bottom: 50px;
+}
+p{
+    font-family: Glacial indeference;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(253, 236, 225); /* No background */
+    border-bottom: 0.5px solid #e0e0e0; /* Optional border */
+}
+
+.navbar-left .logo img {
+    height: 60px; /* Adjust according to your logo size */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-right :hover{
+    color: rgb(2, 61, 54);
+    font-size:20px ;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    
+}
+
+
+
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+
+.phonde-icon {
+    margin-right: 5px; /* Space between icon and number */
+}
+
+/* Carousel for the sliding container*/
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    animation: slide 30s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 10%; /* Each item takes 20% of the container width */
+    box-sizing: border-box;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.carousel-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover effect to pause the animation */
+.carousel-container:hover .carousel {
+    animation-play-state: paused;
+}
+
+/* Keyframe for continuous sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.tshirts-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top:1px solid rgb(2, 61, 55); 
+    border-bottom: 1px solid rgb(2, 61,54);
+    padding: 20px; /*Space between the lines and the content */
+    box-shadow: 0 5px 5px -5px rgb(2, 61, 54, 0.9);
+}
+
+.header h2{
+    color: rgb(2, 61, 54);
+    font-size: large;
+    font-family: Monteserrat Extra bold;
+    font-weight: bolder;
+}
+
+.header-image {
+    width: 100px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 5px; /* Space between image and text */
+    border-radius: 4px;
+    box-shadow: 0 6px 15px rgba(2, 61, 54, 0.9);
+    border-right: 0px;
+}
+
+.header-text {
+    max-width: 600px; /* Adjust based on your design needs */
+    margin-left: 2px;
+    border-left: 20px;
+    font-family: Monteserrat black;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    margin-left: 5px;
+}
+
+.header-text p {
+    margin: 10px 0 0;
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 10px;
+}
+
+.paragraph-link{
+    text-decoration:italics;
+
+}
+/* styles.css */
+#order {
+    background-color:rgb(2, 61, 54); /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#order:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+#order:focus {
+    outline: none; /* Remove focus outline */
+}
+
+#head{
+    text-align: center;
+    font-family: Monteserrat;
+}
+#head h2{
+    font-family: Monteserrat;
+    color:rgb(2, 61, 54); 
+}
+
+
+/* Questions sections*/
+
+
+.collapsible-section {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.collapsible {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding: 10px 0;
+    margin-left: 20px;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Monteserrat;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: none;
+    color: rgb(2, 61, 54);
+    text-align: justify;
+    font-family: Glacial indeference;
+    font-weight: lighter;
+}
+
+.collapsible.active .answer {
+    max-height: 100px; /* Adjust based on content */
+}
+
+.collapsible.active .arrow {
+    transform: rotate(180deg);
+    margin: none;
+}
+
+
+
+/* tshirts display section */
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.poster-item {
+    background-color: rgb(253,236, 225);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    transition:transform 0.3s ease;;
+    
+}
+.poster-item:hover{
+    transform: scale(1.2);
+}
+
+.poster-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.poster-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.poster-description {
+    margin: 0;
+    font-size: 13px;
+    color: rgb(2, 61, 54);
+    font-family: Glacial indeference;
+    font-weight: bolder;
+}
+
+.likes-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.thumb-icon {
+    font-size: 20px;
+    color: pink;
+    margin-left: 5px;
+    transition: color 0.3s;
+}
+
+.thumb-icon:hover {
+    color: rgb(11, 34, 65);
+}
+
+.like-count {
+    font-size: 14px;
+    color: #333;
+}

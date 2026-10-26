@@ -1,0 +1,676 @@
+
+body{
+    background-color: rgb(253, 236, 225);
+    margin: 0;
+}
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(253, 236, 225); /* No background */
+    border-bottom: 0.5px solid #e0e0e0; /* Optional border */
+}
+
+.navbar-left .logo img {
+    height: 60px; /* Adjust according to your logo size */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-right :hover{
+    color: rgb(2, 61, 54);
+    font-size:20px ;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    
+}
+
+
+
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+
+.phonde-icon {
+    margin-right: 5px; /* Space between icon and number */
+    
+}
+#categories {
+    margin-left: 50px;
+}
+
+/* styles.css */
+
+/* about us*/
+
+#About-us {
+    padding: 20px;
+    background-color: rgb(253, 236, 225);
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+
+#About-us h1{
+    color: #007BFF;
+    font-family:Monteserrat;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+
+
+#head{
+    text-align: center;
+}
+
+
+
+/* Specific styling for each section */
+
+
+
+#mission {
+    /* Add specific styles here */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-left: 15px;
+    flex: 1;
+   
+}   
+
+#mission h2 {
+    
+    position: relative; /* Position relative to use pseudo-elements */
+    display: inline-block; /* Ensure the h2 is treated as a block-level element */
+    padding: 20px 40px; /* Adjust padding as needed */
+    border-radius: 50%; /* Create a circular shape */
+    text-align: center; /* Center text */
+    font-family:Monteserrat;
+    color: #007BFF;
+}
+
+
+#mission h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid; 
+}
+
+#mission h2::before {
+    left: 0;
+    border-right: none;
+}
+
+#mission h2::after {
+    right: 0;
+    border-color: blue; /* Right half blue border */
+    border-left: none;
+}
+
+
+
+#mission p{
+    margin: 0 10px;
+    margin-bottom: 10px;
+    font-family: Glacial indeference;
+    font-size: medium;
+    line-height: 1.4em;
+}
+
+
+
+#vision {
+    /* Add specific styles here */
+  
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    flex: 1;
+    
+ 
+}
+
+    
+#vision h2 {
+        text-align: center;
+        position: relative; /* Position relative to use pseudo-elements */
+        display: inline-block; /* Ensure the h2 is treated as a block-level element */
+        padding: 20px 40px; /* Adjust padding as needed */
+        border-radius: 50%; /* Create a circular shape */
+        text-align: center; /* Center text */
+        color: #007BFF;
+        font-family:Monteserrat;
+}
+
+
+#vision h2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        border-radius: 50%;
+        border: 5px solid; /* Adjust border width as needed */
+    }
+
+#vision h2::before {
+        left: 0;
+        border-color: white; /* Left half white border */
+        border-right: none;
+}
+
+#vision h2::after {
+        right: 0;
+        border-color: blue; /* Right half blue border */
+        border-left: none;
+}
+
+#vision p{
+    text-align: justify;
+    margin: 0 10px;
+    font-family: Glacial indeference;
+    font-size: medium;
+    line-height: 1.4em;
+}
+.icon{
+    width: 100px;
+    margin-left: 300px;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+#what-we-offer {
+    /* Add specific styles here */
+   
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-left: 15px;
+    flex: 1;
+}
+#what-we-offer p{
+    margin: 0 10px;
+    text-align: justify;
+    font-family: glacial indeference;
+    font-size: medium;
+    line-height: 1.4em;
+}
+   
+#what-we-offer h2{
+    text-align: center;
+    font-family:Monteserrat;
+    color: #007BFF;
+}
+
+
+#impact {
+   
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    flex: 1;
+    
+}
+ 
+
+
+
+#impact h2{
+    text-align: center;
+    color: #007BFF;
+
+}
+#impact p{
+    margin: 0 10px;
+    text-align: justify;
+    font-weight: lighter;
+    font-family: Glacial indeference;
+    font-size: medium;
+    line-height: 1.4em;
+}
+
+/* Our Team Section Styles */
+.team-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgb(248, 233, 223,0.9);
+    border-radius: 5px;
+  }
+  
+  .team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .team-photo {
+    width: 100%;
+    height: 200px;
+    border-radius:2px; /* Rounded frame */
+    border: 5px solid #ddd; /* Initial border color */
+    transition: border-color 0.3s, transform 0.3s; /* Smooth transition for border color and scale */
+  }
+  
+  .team-member:hover .team-photo {
+    border-color: rgb(2, 61, 54); /* New border color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .team-member h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+
+/* WHATSAAP STICKY BUTTON STYLING*/
+
+  .whatsapp-button {
+    position: fixed; /* Stays in a fixed position on the screen */
+    bottom: 20px; /* 20 pixels from the bottom */
+    right: 20px; /* 20 pixels from the right */
+    z-index: 1000; /* On top of other elements */
+    background-color: #25D366; /* WhatsApp green color */
+    color: #ffffff; /* Text color */
+    border-radius: 30px; /* Rounded button */
+    padding: 10px 15px; /* Padding around the icon and text */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    text-decoration: none; /* Removes underline from the link */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effects */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+
+.whatsapp-button i {
+    font-size: 24px; /* Size of the Font Awesome icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+/* WHy Choose us
+
+.why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid #ddd;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden; /* Ensure the image does not extend beyond the card */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1; /* Make sure the content is above the image initially */
+}
+
+.card i {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hidden-image {
+    position: absolute;
+    top: 100%; /* Initially hide the image below the card */
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
+    transition: top 0.3s ease-in-out;
+    z-index: 0; /* Initially behind the content */
+}
+
+.card:hover .hidden-image {
+    top: 10%; /* Move the image up to appear on top */
+    z-index: 2; /* Move image above the content */
+}
+/* Styling for the "Why Choose Us" Section */
+.why-choose-us {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f7f7f7, #ffffff);
+  }
+  
+  /* Section Title and Subtitle */
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .section-subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* Reasons Grid */
+  .reasons-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Reason Cards */
+  .reason-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover Effect for Reason Cards */
+  .reason-card:hover {
+    transform: translateY(-10px);
+    border-color: #2b8dfc;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Reason Icons */
+  .reason-icon {
+    font-size: 40px;
+    color: #2b8dfc;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .reason-card:hover .reason-icon {
+    color: #ff5722;
+  }
+  
+  /* Reason Headings */
+  .reason-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Reason Descriptions */
+  .reason-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: #2b8dfc;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+  }
+  
+
+/* home contact section
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contact Section Layout */
+.contact-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(244, 254, 254,0.2);
+}
+
+/* Left Side: Image Styling */
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+}
+
+.contact-image img {
+    width: 500px; /* Adjust as needed */
+    height: auto;
+    animation: moveImage 5s ease-in-out infinite alternate;
+}
+
+/* Image Animation */
+@keyframes moveImage {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(20px); }
+}
+
+/* Right Side: Contact Content Styling */
+.contact-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Styling for Phone Number Link */
+.phone-link {
+    font-size: 30px; /* Larger font size */
+    font-weight: bold;
+    color: rgb(255, 0, 0, 0.4); /* Adjust color as needed */
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.phone-link .fa-phone {
+    font-size: 32px; /* Larger icon size */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.phone-link:hover {
+    color: #388E3C; /* Hover color */
+   font-size: 35px;
+}
+
+
+.contact-content .fa-phone {
+    color: #4CAF50; /* Adjust color as needed */
+    margin-right: 8px;
+}
+
+/* Social Media Icons Styling */
+.social-media {
+    margin-top: 40px;
+    border-top: #25D366;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Icon Colors */
+.social-media .fa-linkedin { color: #0077B5; }
+.social-media .fa-behance { color: #1769FF; }
+.social-media .fa-instagram { color: #C13584; }
+.social-media .fa-x-twitter { color: #1DA1F2; }
+.social-media .fa-facebook { color: #4267B2; }
+.social-media .fa-whatsapp { color: #25D366; }
+.social-media .fa-tiktok { color: #69C9D0; }
+
+/* Hover Effects */
+.social-media a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+
+
+/*Footer section*/
+footer {
+    background-color: rgb(255, 245, 243);
+    color: rgb(2, 61, 54);
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color:rgb(2, 61, 54);
+    text-decoration: none;
+    text-align: justify;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height:30px;
+    color: white;
+  }
+  .social-icons :hover{
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p,
+  .footer-bottom a {
+    margin: 0 10px;
+    color:rgb(2, 61, 54);
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .border-right {
+    margin: 0 10px;
+  }
+  
+
+  

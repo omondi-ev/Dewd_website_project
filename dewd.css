@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(253, 236, 225, 0.5);
+}
+p{
+    font-family: Glacial indeference;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(253, 236, 225); /* No background */
+    border-bottom: 0.5px solid #e0e0e0; /* Optional border */
+}
+
+.navbar-left .logo img {
+    height: 60px; /* Adjust according to your logo size */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-right :hover{
+    color: rgb(2, 61, 54);
+    font-size:20px ;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+    
+}
+
+
+
+.phone-number {
+    display: flex;
+    align-items: center;
+}
+
+
+.phonde-icon {
+    margin-right: 5px; /* Space between icon and number */
+    
+}
+
+
+
+/*Categories Section*/
+
+#categories {
+    margin-left: 50px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+#categories h2{
+    margin-left: 200px;
+}
+
+
+
+.nav-container {
+    position: relative;
+    margin-left: 250px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    margin: 20px;
+    font-family: monteserrat;
+}
+
+.nav-list-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    transition: transform 1.9s ease; /* Reduced speed */
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    background-color: #ccc; /* Grey background */
+    color: #000; /* Black text */
+    border-right: 1px solid #ddd;
+    border-radius: 3px;
+    transition: background-color 0.9s ease, transform 0.9s ease;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #bbb; /* Slightly darker grey on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.nav-item:active, .nav-item.active {
+    background-color: rgb(2, 61, 54); /* Dark teal color when active */
+    color: #fff; /* White text when active */
+}
+.nav-item:not(:first-child):active, 
+.nav-item:not(:first-child).active {
+    background-color: rgb(2, 61, 54); /* Dark teal color when active */
+    color: #fff; /* White text when active */
+}
+
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px;
+    width: 30px; /* Small initial width */
+    background: url('search-icon.png') no-repeat center center;
+    background-size: 16px 16px;
+    transition: width 0.5s ease;
+    text-indent: -9999px; /* Hide placeholder initially */
+}
+
+.search-bar input:focus {
+    width: 200px; /* Expanded width on focus */
+    outline: none;
+    text-indent: 0; /* Show placeholder text */
+    background: none; /* Remove the search icon */
+    background-color: #fff; /* White background for better visibility */
+    color: #000; /* Black text for contrast */
+    cursor: text;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('https://your-hosting-service.com/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+         url('https://your-hosting-service.com/fonts/GlacialIndifference-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2,h3 {
+    font-family: 'Glacial Indifference', sans-serif;
+    text-decoration: none;
+    text-decoration-color:black ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.column-posters h3{
+    text-decoration: none;
+}
+
+.most-popular {
+    margin: 50px 0;
+}
+
+.most-popular h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6%;
+    max-height: 420px;
+   
+}
+
+.column {
+    padding: 20px;
+    background-color: rgb(255, 248, 244);
+    border-radius: 1px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-bottom: none;
+}
+
+
+
+.column:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(2, 61, 54, 0.9);
+    
+}
+
+/* posters column se*/
+.posters {
+    flex: 1.2; /* Wider column */
+    
+}
+
+.column.posters {
+    border-left: none;
+}
+
+.logos {
+    flex: 1; /* Narrower column */
+}
+
+.tshirts {
+    flex: 1.5; /* Medium-width column */
+   
+}
+
+.column h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    color: rgb(2, 61, 54);
+    text-decoration: none;
+    font-family: Glacial indeference;
+}
+
+.column p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.poster-carousel {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.poster-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-left: 30px;
+    border-radius: 4px;
+    box-shadow: 0 6px 15px rgba(2, 61, 54, 0.9);
+}
+
+
+.poster-carousel img.active {
+    opacity: 1;
+}
+
+/* t-shirts section*/
+/* Ensure that the images are small and fit within the column */
+.column.tshirts {
+    /* Set width and padding for the T-shirts column as needed */
+    padding: 20px;
+}
+
+/* Grid layout for images */
+.tshirts-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between images */
+}
+
+/* Style for images */
+.tshirts-images img {
+    width: 100%; /* Make images fit the grid cells */
+    height: 130px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the cell without stretching */
+}
+/* Logos Column */
+.column.logos {
+    width: 20%; /* Maintain the column width */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+/* Text container inside the Logos column */
+.logos-text p {
+    margin: 5px 0; /* Add some margin between paragraphs */
+    word-wrap: break-word; /* Ensure long words or URLs break within the column */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Carousel*/
+
+/* Carousel for the sliding container*/
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    animation: slide 30s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 10%; /* Each item takes 20% of the container width */
+    box-sizing: border-box;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.carousel-item p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Hover effect to pause the animation */
+.carousel-container:hover .carousel {
+    animation-play-state: paused;
+}
+
+/* Keyframe for continuous sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*Footer section*/
+footer {
+    background-color: rgb(253, 236, 225);
+    color: rgb(2, 61, 54);
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .footer-column {
+    width: 30%;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color:rgb(2, 61, 54);
+    text-decoration: none;
+    text-align: justify;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height:30px;
+    color: white;
+  }
+  .social-icons :hover{
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom p,
+  .footer-bottom a {
+    margin: 0 10px;
+    color:rgb(2, 61, 54);
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .border-right {
+    margin: 0 10px;
+  }
+
+
+  /* WHATSAAP STICKY BUTTON STYLING*/
+
+  .whatsapp-button {
+    position: fixed; /* Stays in a fixed position on the screen */
+    bottom: 20px; /* 20 pixels from the bottom */
+    right: 20px; /* 20 pixels from the right */
+    z-index: 1000; /* On top of other elements */
+    background-color: #25D366; /* WhatsApp green color */
+    color: #ffffff; /* Text color */
+    border-radius: 30px; /* Rounded button */
+    padding: 10px 15px; /* Padding around the icon and text */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+    text-decoration: none; /* Removes underline from the link */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hover effects */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe57; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+
+
+.whatsapp-button i {
+    font-size: 24px; /* Size of the Font Awesome icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+  
